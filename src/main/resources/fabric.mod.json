@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "cubeapply",
+  "version": "${version}",
+  "name": "CubeApply",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cubeapply/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.fadegor05.cubeapply.client.CubeApplyClient"
+    ],
+    "main": [
+      "com.fadegor05.cubeapply.CubeApply"
+    ]
+  },
+  "mixins": [
+    "cubeapply.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
